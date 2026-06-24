@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL-STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="KalaSetu"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KalaSetu">
+
+        <activity android:name=".ui.auth.RoleSelectionActivity"/>
+        <activity android:name=".ui.artisan.AddProductActivity"/>
+        <activity android:name=".ui.artisan.ArtisanHomeActivity"/>
+        <activity android:name=".ui.customer.CustomerHomeActivity"/>
+        <activity android:name=".ui.customer.WishlistActivity"/>
+        <activity android:name=".ui.auth.ArtisanLoginActivity"/>
+        <activity android:name=".ui.customer.CustomerLoginActivity"/>
+        <activity android:name=".ui.customer.ProductDetailsActivity"/>
+        <activity android:name=".ui.customer.ProfileActivity"/>
+        <activity android:name=".ui.customer.ChatActivity"/>
+        <activity android:name=".ui.artisan.ManageOrdersActivity"/>
+        <activity  android:name=".ui.artisan.ArtisanDashboardActivity"/>
+        <activity android:name=".ui.artisan.ArtisanProfileActivity"/>
+        <activity android:name=".ui.admin.AdminDashboardActivity"/>
+        <activity android:name=".ui.admin.AdminReportsActivity"/>
+        <activity android:name=".ui.customer.CustomerProfileActivity"/>
+        <activity android:name=".ui.artisan.SalesAnalyticsActivity"/>
+        <activity android:name=".ui.artisan.OrdersActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name=
+                    "android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
